@@ -1,0 +1,82 @@
+.event-container {
+  min-height: 100vh;
+  font-family: 'Helvetica';
+  /* background-color: rgba(204, 182, 255, 1); */
+  background-image: linear-gradient(rgba(36, 13, 87, 0.75), rgba(36, 13, 87, 0.75)), url(../../images/pattern.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-container__inner {
+  position: relative;
+  max-width: 530px;
+  width: 100%;
+  background: rgba(237, 229, 255, 1);
+  padding: 44px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.event-container__inner h1 {
+  font-size: 40px;
+  color: rgba(36, 13, 87, 1);
+  text-align: center;
+}
+
+.event-container__inner h2 {
+  position: relative;
+  font-size: 22px;
+  color: #333;
+}
+
+.event-container__inner h2::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background-color: #FE6D6D;
+}
+
+.event-form {
+  margin-top: 30px; 
+}
+
+.event-form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  background-color: rgba(246, 242, 255, 1);
+}
+
+.input-box input:focus, .input-box input:valid {
+  border-color: rgba(132, 86, 236, 1);
+}
+
+.input-box.button input {
+  background: rgba(80, 31, 193, 1);
+  color: rgba(251, 250, 255, 1);
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid rgba(36, 13, 87, 1);
+}
+
+.input-box.button:hover {
+  background-color: rgba(204, 182, 255, 1);
+  cursor: pointer;
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(204, 182, 255, 1);
+  transform: translateY(-0.15em);
+}
